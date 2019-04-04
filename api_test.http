@@ -1,0 +1,58 @@
+GET http://localhost:8080/userlist
+Accept: application/json
+
+###
+GET http://localhost:8080/commentlist
+Accept: application/json
+###
+POST http://localhost:8080/useradd
+Content-Type: application/json
+
+{
+  "username" : "bbb",
+  "email" : "bbb@dgsw"
+}
+
+###
+GET http://localhost:8080/userview/1
+Accept: application/json
+
+###
+PUT http://localhost:8080/userupdate/5
+Content-Type: application/json
+
+{
+  "username" : "ccc"
+}
+
+###
+DELETE http://localhost:8080/userdelete/1
+Accept: application/json
+
+###
+GET http://localhost:8080/commentview/4
+Accept: application/json
+
+###
+POST http://localhost:8080/commentadd
+Content-Type: application/json
+
+{
+  "userId" : "1",
+  "content" : "888"
+}
+
+###
+PUT http://localhost:8080/commentupdate/4
+Content-Type: application/json
+
+{
+  "userId" : "",
+  "content" : "hi"
+}
+
+###
+DELETE http://localhost:8080/commentdelete/4
+Accept: application/json
+
+###
