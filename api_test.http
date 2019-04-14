@@ -56,3 +56,14 @@ DELETE http://localhost:8080/commentdelete/4
 Accept: application/json
 
 ###
+PUT http://localhost:8080/commentupdate/4
+Content-Type: application/json
+
+{
+  "userId" : "1",
+  "content" : "888",
+  "imgPath" : "C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture002.png",
+  "imgName" : "Capture002.png"
+}
+
+###

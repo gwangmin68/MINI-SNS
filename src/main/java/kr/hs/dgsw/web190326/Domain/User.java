@@ -19,6 +19,7 @@ public class User {
     private Long id;
 
     private String username;
+    private String password;
     private String email;
     private String imgPath = null;
     private String imgName = null;
@@ -28,13 +29,15 @@ public class User {
     @UpdateTimestamp//수정일
     private LocalDateTime modified;
 
-    public User(String username, String email){
+    public User(String username, String password, String email){
         this.username = username;
+        this.password = password;
         this.email = email;
     }
 
-    public User(String username, String email, String imgPath, String imgName){
+    public User(String username, String password, String email, String imgPath, String imgName){
         this.username = username;
+        this.password = password;
         this.email = email;
         this.imgPath = imgPath;
         this.imgName = imgName;

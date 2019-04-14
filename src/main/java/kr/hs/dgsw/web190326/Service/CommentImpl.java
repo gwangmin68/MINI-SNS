@@ -24,10 +24,10 @@ public class CommentImpl implements CommentService {
 
     @PostConstruct
     private void init(){
-        User u = this.userRepository.save(new User("aaa", "aaa@dgsw"));
-        this.commentRepository.save(new Comment(u.getId(),"hi there 111"));
-        this.commentRepository.save(new Comment(u.getId(),"hi there 222"));
-        this.commentRepository.save(new Comment(u.getId(),"hi there 333"));
+        User u = this.userRepository.save(new User("aaa", "123", "aaa@dgsw", "C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture001.png", "Capture001.png"));
+        this.commentRepository.save(new Comment(u.getId(),"hi there 111","C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture001.png", "Capture001.png"));
+        this.commentRepository.save(new Comment(u.getId(),"hi there 222","C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture001.png", "Capture001.png"));
+        this.commentRepository.save(new Comment(u.getId(),"hi there 333","C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture001.png", "Capture001.png"));
     }
 
     @Override
@@ -61,7 +61,10 @@ public class CommentImpl implements CommentService {
     public Comment update(Long id, Comment comment) {
         return this.commentRepository.findById(id)
                 .map(found -> {
+                    System.out.println(found.getImgPath() + "/" + found.getImgName());
                     found.setContent(Optional.ofNullable(comment.getContent()).orElse(found.getContent()));
+                    found.setImgPath(Optional.ofNullable(comment.getImgPath()).orElse(found.getImgPath()));
+                    found.setImgName(Optional.ofNullable(comment.getImgName()).orElse(found.getImgName()));
                     return this.commentRepository.save(found);
                 })
                 .orElse(null);

@@ -1,0 +1,390 @@
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T084710.200.json
+
+###
+
+PUT http://localhost:8080/commentupdate/4
+Content-Type: application/json
+
+{
+  "userId" : "1",
+  "content" : "888",
+  "imgPath" : "C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture002.png",
+  "imgName" : "Capture002.png"
+}
+
+<> 2019-04-14T084605.200.json
+
+###
+
+POST http://localhost:8080/commentupdate/4
+Content-Type: application/json
+
+{
+  "userId" : "1",
+  "content" : "888",
+  "imgPath" : "C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture002.png",
+  "imgName" : "Capture002.png"
+}
+
+<> 2019-04-14T084545.405.html
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T084522.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T083735.200.json
+
+###
+
+POST http://localhost:8080/commentupdate/4
+Content-Type: application/json
+
+{
+  "userId" : "1",
+  "content" : "888",
+  "imgPath" : "C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture002.png",
+  "imgName" : "Capture002.png"
+}
+
+<> 2019-04-14T083332.405.html
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T083304.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T072847.200.json
+
+###
+
+POST http://localhost:8080/commentadd
+Content-Type: application/json
+
+{
+  "userId" : "1",
+  "content" : "888",
+  "imgPath" : "zz",
+  "imgName" : "zzz"
+}
+
+<> 2019-04-14T072747.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T072741.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T072704.200.json
+
+###
+
+POST http://localhost:8080/commentadd
+Content-Type: application/json
+
+{
+  "userId" : "1",
+  "content" : "888",
+  "imgPath" : "zz",
+  "imgName" : "zzz"
+}
+
+<> 2019-04-14T072543.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T072002.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-14T064012.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-09T025559.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-09T021522.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-08T022948.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-08T021750.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-04T033911.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-04T032725.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-04T032400.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-04T032051.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-04T031732.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-04T030937.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-04T022523.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-04T022520.200.json
+
+###
+
+GET http://localhost:8080/userlist
+Accept: application/json
+
+<> 2019-04-04T021640.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-04T012418.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T032357.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T030922.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T030541.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T030506.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T030446.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T030301.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T030153.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T025817.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T025648.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T025518.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T025425.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T025011.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T024843.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T024716.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T024625.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T024445.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T023956.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T023915.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T022847.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T022435.200.json
+
+###
+
+PUT http://localhost:8080/commentupdate/4
+Content-Type: application/json
+
+{
+  "userId" : "",
+  "content" : "hi"
+}
+
+<> 2019-04-02T022433.200.json
+
+###
+
+GET http://localhost:8080/commentlist
+Accept: application/json
+
+<> 2019-04-02T022422.200.json
+
+###
+

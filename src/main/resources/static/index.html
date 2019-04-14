@@ -23,12 +23,50 @@
 <div>
 사용자 리스트
 <div id="user-list"></div>
+<button onclick="openLoginDialog()">로그인</button>
+<style>
+    #Login-container{
+        display: none;
+        justify-content:center;
+        align-items:center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vw;
+        background-color: #000000aa;
+    }
+</style>
+<div id="container">
+    <div id="Login-container">
+        <div style="background-color: white; text-align:center; position: relative;width: 300px;">
+            <div style="margin:30px 0 30px 0">로그인</div>
+            <div>
+                <input type="text" placeholder="사용자 아이디">
+            </div>
+            <div>
+                <input type="text" placeholder="패스워드" type="password">
+            </div>
+            <div style="margin:30px 0 30px 0">
+                <button>확인</button>
+                <button onclick="closeLoginDialog()">취소</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 <script>
 
+    function openLoginDialog(){
+        $('#Login-container').css('display', 'flex').show();//show(1000) : 1초 동안 동작(느리게 뜸)
+    }
+
+    function closeLoginDialog(){
+        $('#Login-container').hide();
+    }
     async function addImg(button, id){
         try{
             let file = $(button).prev()[0].files[0];
@@ -60,6 +98,8 @@
                 data: JSON.stringify(Data)
             });
             $(button).parent().prev().html(JSON.stringify(responseUser.imgName));
+
+            window.location.assign('/attachmentdown/' + 'user/' + id)
         }catch (err) {
             console.log(JSON.stringify(err));
         }
@@ -77,7 +117,6 @@
                 processData: false,
                 contentType: false
             });
-            console.log(JSON.stringify(response));
         }catch (err) {
             console.log(JSON.stringify(err));
         }
